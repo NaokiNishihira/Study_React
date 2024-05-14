@@ -5,10 +5,11 @@ import Welcome from './Welcome';
 import Hello from './Hello';
 import UseImg from './UseImg';
 import UseIF from './UseIF';
+import Useli from './Useli';
 
 function App() {
   return (
-    <UseIF />
+    <Useli />
   );
 }
 
