@@ -6,6 +6,7 @@ import MyButton from './MyButton';
 
 export default function Home(){
     const [text, setText] = useState('名前入力')
+    const ButtonName = '入力完了'
 
     return(
         <div>
@@ -19,7 +20,7 @@ export default function Home(){
                     />
                 </form>
                 <br />
-                <MyButton />
+                <MyButton ButtonName={ButtonName} />
             </h1>
         </div>
     );

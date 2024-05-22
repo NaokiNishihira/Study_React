@@ -1,11 +1,11 @@
 import React from 'react';
 import { HandleClick } from './HandleClick';
 
-export default function MyButton(){
+export default function MyButton({ ButtonName }){
     return(
         <div className="container">
             <button onClick={HandleClick()}>
-                入力完了
+                {ButtonName}
             </button>
         </div>
     );
