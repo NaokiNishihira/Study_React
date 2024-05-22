@@ -8,10 +8,12 @@ import UseImg from './UseImg';
 import UseIF from './UseIF';
 import Useli from './Useli';
 import UseState from './UseState';
+import UseTextBox from './UseTextBox';
+import Home from './Home';
 
 function App() {
   return (
-    <UseState />
+    <Home />
   );
 }
 
