@@ -6,8 +6,9 @@ export default function TopPage(){
     return(
         <div className='title'>
             <p>Hello World!!</p>
-            <br />
-            <Mybutton />
+            <div>
+                <Mybutton />
+            </div>
         </div>
     );
 }
