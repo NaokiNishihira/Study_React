@@ -1,26 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import {useState} from 'react';
 import UseCss from './UseCss.css';
 import TopPage from './TopPage';
+import MyButton from './MyButton';
 
 export default function Home(){
     const [text, setText] = useState('名前入力')
-    const navigate = useNavigate()
-
-    const handleClick = () => {
-            navigate('/TopPage');
-    }
-
-    function MyButton(){
-        return(
-            <div className="container">
-                <button onClick={handleClick}>
-                    入力完了
-                </button>
-            </div>
-        );
-    }
 
     return(
         <div>
@@ -33,6 +18,7 @@ export default function Home(){
                         onChange={(e) => setText(e.target.value)}
                     />
                 </form>
+                <br />
                 <MyButton />
             </h1>
         </div>

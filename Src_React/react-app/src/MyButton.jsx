@@ -1,13 +1,12 @@
 import React from 'react';
+import { HandleClick } from './HandleClick';
 
 export default function MyButton(){
-    function handleClick(){
-        alert('You clicked me!!');
-    }
-
     return(
-        <button onClick={handleClick}>
-            Click me!
-        </button>
+        <div className="container">
+            <button onClick={HandleClick()}>
+                入力完了
+            </button>
+        </div>
     );
 }
