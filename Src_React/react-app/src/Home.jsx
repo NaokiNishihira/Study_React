@@ -7,6 +7,7 @@ import MyButton from './MyButton';
 export default function Home(){
     const [text, setText] = useState('名前入力')
     const ButtonName = '入力完了'
+    const Page = '/TopPage'
 
     return(
         <div>
