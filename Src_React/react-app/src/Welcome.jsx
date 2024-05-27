@@ -1,5 +1,5 @@
 import React from 'react';
-import MyButton from './MyButton';
+import {MyButton} from './MyButton';
 
 export default function Welcome(){
     return(

@@ -2,12 +2,13 @@ import React from 'react';
 import {useState} from 'react';
 import UseCss from './UseCss.css';
 import TopPage from './TopPage';
-import MyButton from './MyButton';
+import {PageButton} from './MyButton';
+
+{/* default functionじゃない場合は{}を使わないといけない*/}
 
 export default function Home(){
     const [text, setText] = useState('名前入力')
-    const ButtonName = '入力完了'
-    const Page = '/TopPage'
+    const ButtonState = {name: '入力完了', page: '/TopPage'}
 
     return(
         <div>
@@ -21,7 +22,7 @@ export default function Home(){
                     />
                 </form>
                 <br />
-                <MyButton ButtonName={ButtonName} />
+                <PageButton ButtonName={ButtonState.name} ButtonPage={ButtonState.page} />
             </h1>
         </div>
     );
