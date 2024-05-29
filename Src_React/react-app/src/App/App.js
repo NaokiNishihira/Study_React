@@ -2,13 +2,13 @@ import logo from './logo.svg';
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
-import Welcome from './Welcome';
-import Hello from './Hello';
-import MyButton from './App/MyButton';
+import Welcome from '../Welcome';
+import Hello from '../Hello';
+import MyButton from './MyButton';
 import UseState from './UseState';
 import UseTextBox from './UseTextBox';
-import Home from './App/Home';
-import TopPage from './App/TopPage';
+import Home from './Home';
+import TopPage from './TopPage';
 
 function App() {
   return (
