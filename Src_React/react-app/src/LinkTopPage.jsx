@@ -1,7 +1,7 @@
 import React from 'react';
 import {useLocation, Link} from 'react-router-dom';
 
-export default function TopPage(){
+export default function LinkTopPage(){
     const location = useLocation();
     const text = location.state?.text || "no message passed";
 

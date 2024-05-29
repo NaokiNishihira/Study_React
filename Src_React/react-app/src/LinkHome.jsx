@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 
-export default function Home(){
+export default function LinkHome(){
     const [text, setText] = useState('名前入力')
     const ButtonState = {name: '入力完了', page: '/TopPage'}
     const message = "Hello from Home Page!";

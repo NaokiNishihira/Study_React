@@ -1,19 +1,25 @@
 import logo from './logo.svg';
 import React from 'react';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
 import Welcome from './Welcome';
 import Hello from './Hello';
 import MyButton from './MyButton';
-import UseImg from './UseImg';
-import UseIF from './UseIF';
-import Useli from './Useli';
 import UseState from './UseState';
 import UseTextBox from './UseTextBox';
 import Home from './Home';
+import TopPage from './TopPage';
 
 function App() {
   return (
-    <Home />
+    <div>
+        <Router>
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route path='/TopPage' element={<TopPage />} />
+            </Routes>
+        </Router>
+    </div>
   );
 }
 
