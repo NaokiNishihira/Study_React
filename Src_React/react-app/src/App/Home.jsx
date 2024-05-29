@@ -3,8 +3,8 @@ import {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 export default function Home(){
-    const [text, setText] = useState('名前入力')
-    const ButtonState = {name: '入力完了', page: '/TopPage'}
+    const [text, setText] = useState('名前入力');
+    const ButtonState = {name: '入力完了'};
     const message = "Hello from Home Page!";
 
     return(
@@ -21,7 +21,7 @@ export default function Home(){
                 <br />
                 <Link to="/TopPage" state={{ text }}>
                     <button>
-                        入力完了
+                        {ButtonState.name}
                     </button>
                 </Link>
             </h1>
