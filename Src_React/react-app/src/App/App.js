@@ -6,13 +6,14 @@ import Welcome from '../Welcome';
 import Hello from '../Hello';
 import Home from './Home';
 import TopPage from './TopPage';
+import AppHome from './AppHome';
 
 function App() {
   return (
     <div>
         <Router>
             <Routes>
-                <Route exact path='/' element={<Home />} />
+                <Route exact path='/' element={<AppHome />} />
                 <Route path='/TopPage' element={<TopPage />} />
             </Routes>
         </Router>
