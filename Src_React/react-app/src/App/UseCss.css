@@ -1,3 +1,6 @@
+/*font-style*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 .container{
     display: flex;
     justify-content: center;
@@ -11,12 +14,22 @@
     align-items: center;
     font-size: 50px;
     color:blue;
-    font-family: 'Your Handwriting Font', cursive;
+    font-family: 'Caveat', cursive;
+    line-height: 1;
+    padding-top: 0;
+    margin-top: 0;
 }
 
-.button-center{
+.button-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; 
+    gap: 50px;
+}
+
+.button-container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
