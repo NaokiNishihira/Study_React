@@ -12,16 +12,14 @@ export default function AppHome(){
         <div>
             <h1 className="title">Welcome</h1>
             <h2 className='title'>優しいSNS</h2>
-            <h1 className="container">
-                <br />
-                <Link to="/TopPage">
-                    <div className='button-container'>
-                        <button>{'新着'}</button>
-                        <button>{'アニメ'}</button>
-                        <button>{'スポーツ'}</button>
-                    </div>
-                </Link>
-            </h1>
+            <br />
+            <Link to="/TopPage">
+                <div className='container'>
+                    <button>{'新着'}</button>
+                    <button>{'アニメ'}</button>
+                    <button>{'スポーツ'}</button>
+                </div>
+            </Link>
         </div>
     );
 }

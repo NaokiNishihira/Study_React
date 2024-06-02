@@ -1,11 +1,7 @@
 /*font-style*/
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');/*Caveat*/
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');/*はんなり明朝*/
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap');/*解星 特ミン*/
 
 .title{
     display: flex;
@@ -14,22 +10,30 @@
     align-items: center;
     font-size: 50px;
     color:blue;
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', 'Kaisei Tokumin', cursive;
     line-height: 1;
     padding-top: 0;
     margin-top: 0;
 }
 
-.button-container{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
-.button-container button{
+.container button{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
+    background-color: rgb(146, 255, 179); /* ボタンの背景色を青に設定 */
+    color: rgba(0, 0, 0); /* ボタンのテキスト色を白に設定 */
+    padding: 10px 20px; /* パディングを追加 */
+    border: none; /* デフォルトのボーダーを削除 */
+    border-radius: 5px; /* 角を少し丸める */
+    font-size: 20px; /* フォントサイズを設定 */
+    font-family: 'Caveat', 'Kaisei Tokumin', cursive; /*font-style*/
+    text-decoration: none;
 }
