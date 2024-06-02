@@ -6,9 +6,17 @@
 
 .title{
     display: flex;
-    flex-Direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 50px;
     color:blue;
+    font-family: 'Your Handwriting Font', cursive;
+}
+
+.button-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
 }

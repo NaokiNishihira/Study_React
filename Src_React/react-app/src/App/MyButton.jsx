@@ -1,5 +1,5 @@
 import React from 'react';
-import { HandleClick } from '../HandleClick';
+import { HandleClick } from './HandleClick';
 
 export function MyButton({ ButtonName }){
     return(

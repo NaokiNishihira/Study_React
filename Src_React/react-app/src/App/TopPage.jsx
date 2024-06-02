@@ -1,5 +1,6 @@
 import React from 'react';
 import {useLocation, Link} from 'react-router-dom';
+import UseCss from './UseCss.css';
 
 export default function TopPage(){
     const location = useLocation();
@@ -7,13 +8,16 @@ export default function TopPage(){
 
     return(
         <div>
-            <h1>Welcome to TopPage!!</h1>
-            <p>あなたの名前は {text} ですね？</p>
-            <Link to="/">
-                <button>
-                    戻る
-                </button>
-            </Link>
+            <h1 className='title'>Welcome to TopPage!!</h1>
+
+            <p className='container'>あなたの名前は {text} ですね？</p>
+            <div className='button-center'>
+                <Link to="/">
+                    <button>
+                        戻る
+                    </button>
+                </Link>
+            </div>
         </div>
     );
 }
