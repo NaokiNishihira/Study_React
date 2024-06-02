@@ -10,7 +10,7 @@ export default function Home(){
 
     return(
         <div>
-            <p className="title">Welcom</p>
+            <p className="title">Welcome</p>
             <h1 className="container">
                 <form onSubmit={(e) => e.preventDefault()}>
                     <input
