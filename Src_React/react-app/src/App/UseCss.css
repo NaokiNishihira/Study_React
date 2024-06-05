@@ -26,9 +26,9 @@
 .container button {
     background-color: rgb(146, 255, 179); /* ボタンの背景色 */
     color: rgba(0, 0, 0); /* ボタンのテキスト色 */
-    padding: 5px 5px; /* パディング */
+    padding: 10px 5px; /* パディング */
     border: none; /* デフォルトのボーダーを削除 */
-    border-radius: 5px; /* 角を丸める */
+    border-radius: 15px; /* 角を丸める */
     font-size: 20px; /* フォントサイズ */
     font-family: 'Caveat', 'Kaisei Tokumin', cursive; /* フォントスタイル */
     width: 100px; /* 固定幅 */
@@ -45,19 +45,19 @@
 .textbox {
     display: flex;
     justify-content: center; /* 水平方向の中央揃え */
-    margin-top: 40px;
+    margin-top: 40px;        /* ボタンとの間隔を指定*/
 }
 
 .textbox_size {
     display: inline-block;
-    width: 300px;
+    width: 500px;
     padding: 1em 0.5em;
     line-height: 1;
     border: 2px solid #31bff3;
     box-sizing: border-box;
     background: #ccedfa;
     margin: 0.5em 0;
-    border-radius: 10px; /* 一括で角を丸める */
+    border-radius: 15px; /* 一括で角を丸める */
 }
 
 /* Linkに下線が引かれないように（ボタンの中にも適用） */
