@@ -24,10 +24,6 @@
 }
 
 .container button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     background-color: rgb(146, 255, 179); /* ボタンの背景色を青に設定 */
     color: rgba(0, 0, 0); /* ボタンのテキスト色を白に設定 */
     padding: 10px 20px; /* パディングを追加 */
@@ -35,5 +31,10 @@
     border-radius: 5px; /* 角を少し丸める */
     font-size: 20px; /* フォントサイズを設定 */
     font-family: 'Caveat', 'Kaisei Tokumin', cursive; /*font-style*/
-    text-decoration: none;
+}
+
+/*Linkに下線が引かれないように（ボタンの中にも適用）*/
+a {
+    text-decoration: none; /* 下線を削除 */
+    color: inherit; /* 親要素の色を継承 */
 }
