@@ -1,39 +1,66 @@
-/*font-style*/
+/* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');/*Caveat*/
 @import url('https://fonts.googleapis.com/earlyaccess/hannari.css');/*はんなり明朝*/
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap');/*解星 特ミン*/
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    color:blue;
+    color: blue;
     font-family: 'Caveat', 'Kaisei Tokumin', cursive;
     line-height: 1;
     padding-top: 0;
     margin-top: 0;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
-.container button{
-    background-color: rgb(146, 255, 179); /* ボタンの背景色を青に設定 */
-    color: rgba(0, 0, 0); /* ボタンのテキスト色を白に設定 */
-    padding: 10px 20px; /* パディングを追加 */
+.container button {
+    background-color: rgb(146, 255, 179); /* ボタンの背景色 */
+    color: rgba(0, 0, 0); /* ボタンのテキスト色 */
+    padding: 5px 5px; /* パディング */
     border: none; /* デフォルトのボーダーを削除 */
-    border-radius: 5px; /* 角を少し丸める */
-    font-size: 20px; /* フォントサイズを設定 */
-    font-family: 'Caveat', 'Kaisei Tokumin', cursive; /*font-style*/
+    border-radius: 5px; /* 角を丸める */
+    font-size: 20px; /* フォントサイズ */
+    font-family: 'Caveat', 'Kaisei Tokumin', cursive; /* フォントスタイル */
+    width: 100px; /* 固定幅 */
 }
 
-/*Linkに下線が引かれないように（ボタンの中にも適用）*/
+.textbox-container {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    gap: 20px; /* テキストボックスとボタンの間隔 */
+    flex-direction: column; /* 縦方向に並べる */
+}
+
+.textbox {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    margin-top: 40px;
+}
+
+.textbox_size {
+    display: inline-block;
+    width: 300px;
+    padding: 1em 0.5em;
+    line-height: 1;
+    border: 2px solid #31bff3;
+    box-sizing: border-box;
+    background: #ccedfa;
+    margin: 0.5em 0;
+    border-radius: 10px; /* 一括で角を丸める */
+}
+
+/* Linkに下線が引かれないように（ボタンの中にも適用） */
 a {
     text-decoration: none; /* 下線を削除 */
     color: inherit; /* 親要素の色を継承 */
