@@ -1,7 +1,7 @@
 /* Importing fonts */
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');/*Caveat*/
-@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');/*はんなり明朝*/
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap');/*解星 特ミン*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); /* Caveat */
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css'); /* はんなり明朝 */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap'); /* 解星 特ミン */
 
 .title {
     display: flex;
@@ -45,11 +45,16 @@
 .textbox {
     display: flex;
     justify-content: center; /* 水平方向の中央揃え */
-    margin-top: 40px;        /* ボタンとの間隔を指定*/
+    margin-top: 40px; /* ボタンとの間隔を指定 */
+}
+
+.textbox-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .textbox_size {
-    display: inline-block;
     width: 500px;
     padding: 1em 0.5em;
     line-height: 1;
@@ -58,6 +63,14 @@
     background: #ccedfa;
     margin: 0.5em 0;
     border-radius: 15px; /* 一括で角を丸める */
+    padding-right: 2.5em; /* アイコンのための余白 */
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
 }
 
 /* Linkに下線が引かれないように（ボタンの中にも適用） */
