@@ -21,7 +21,7 @@
 .title-special {
     font-size: 45px;
     color: black; /* h3タグのタイトルの色を指定 */
-    padding-top: 20px;
+    padding-top: 5px;   /*高さ指定(paddingは相対指定)*/
 }
 
 /*今はボタンにしか使用していない*/
@@ -30,12 +30,13 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    margin-top: 0px;
 }
 
 .container button {
     background-color: rgb(146, 255, 179); /* ボタンの背景色 */
     color: rgba(0, 0, 0); /* ボタンのテキスト色 */
-    padding: 10px 5px; /* パディング */
+    padding: 10px 5px; /* ボタンの幅指定 */
     border: none; /* デフォルトのボーダーを削除 */
     border-radius: 15px; /* 角を丸める */
     font-size: 20px; /* フォントサイズ */
@@ -55,7 +56,7 @@
 .textbox {
     display: flex;
     justify-content: center; /* 水平方向の中央揃え */
-    margin-top: 40px; /* ボタンとの間隔を指定 */
+    margin-top: 20px; /* ボタンとの間隔を指定 */
 }
 
 .textbox-wrapper {
@@ -92,9 +93,31 @@
     font-size: 1.5em;
 }
 
+/*テーブル用位置決め*/
+.table-container {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    padding-top: 0px;  /*高さ指定*/
+    font-size: 20px;    /*フォントサイズ指定*/
+}
+
+/*table line*/
 .table-custom {
     border-collapse: collapse;
-    border: 1px solid black; /* 枠線のスタイル */
+    border: 1px solid rgb(181, 181, 181); /* 枠線のスタイル */
+    width: 50%;                /*テーブル全体の幅指定 画面の割合%*/
+}
+
+.table-custom th {
+    background-color: #ccedfa; /* ヘッダーの背景色 */
+    color: black; /* ヘッダーのテキスト色 */
+}
+
+.table-custom td {
+    padding: 3px; /* セルのパディング */
+    background-color: #ccedfa; /* ヘッダーの背景色 */
+    color: black; /* ヘッダーのテキスト色 */
 }
 
 
