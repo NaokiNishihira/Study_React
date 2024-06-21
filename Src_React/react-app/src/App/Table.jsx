@@ -19,7 +19,7 @@ const Table = () => {
     const filteredData = data.filter(item => item.id >= filterValue);
 
     return (
-        <div>
+        <div className='table-container'>
             <table border='1' className='table-custom'>
                 <thead>
                     <tr>
