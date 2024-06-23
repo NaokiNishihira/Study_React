@@ -21,7 +21,7 @@ export default function AppHome() {
             <br />
             <div className="textbox-container">
                 {/* ボタンを押すとページが飛ぶようになっている */}
-                <Link to="/TopPage">
+                <Link to="/Client00">
                     <div className="container">
                         <button>{GenresName[2]}</button>
                         <button>{GenresName[3]}</button>
