@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/earlyaccess/hannari.css'); /* はんなり明朝 */
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap'); /* 解星 特ミン */
 
+/* html, body全体に背景画像を適用する */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: url('./SNSv2.png') no-repeat center center fixed; 
+    background-size: cover;
+}
+
 /*title(h)要素に使用する*/
 .title {
     display: flex;
@@ -10,7 +21,7 @@
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    color: blue;
+    color: rgb(185, 152, 253);
     font-family: 'Caveat', 'Kaisei Tokumin', cursive;
     line-height: 1;
     padding-top: 0;
@@ -85,6 +96,18 @@
     letter-spacing: 0.1em;  /*文字間隔を指定*/
 }
 
+/*スレッド作成用テキスト*/
+.make_threads_textbox {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none; /* フォーカス時の青い枠を消す */
+    box-sizing: border-box;
+    background: rgb(249, 247, 179);
+    font-size: 30px;
+    font-family: 'Caveat', 'Kaisei Tokumin', cursive; /* フォントスタイル */
+}
+
 /*検索ボタンに使用*/
 .search-icon {
     position: absolute;
@@ -98,25 +121,60 @@
     display: flex;
     justify-content: center; /* 水平方向の中央揃え */
     align-items: center; /* 垂直方向の中央揃え */
-    padding-top: 0px;  /*高さ指定*/
+    padding-top: 0em;  /*高さ指定*/
     font-size: 20px;    /*フォントサイズ指定*/
+    max-height: 250px; /* テーブルコンテナの最大高さを指定 */
+    overflow-y: auto; /* 縦方向のスクロールを有効にする */
+}
+
+/*スレッド作成用テーブル位置*/
+.table-make-threads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5em;  /*変更点 高さ指定*/
+    font-size: 20px;
+    max-height: 250px;
+    overflow-y: auto;
 }
 
 /*table line*/
 .table-custom {
     border-collapse: collapse;
-    border: 1px solid rgb(181, 181, 181); /* 枠線のスタイル */
+    border: 1px solid rgb(177, 217, 250); /* 枠線のスタイル */
     width: 50%;                /*テーブル全体の幅指定 画面の割合%*/
 }
 
 .table-custom th {
+    font-family: 'Caveat', 'Kaisei Tokumin', cursive;
     background-color: #ccedfa; /* ヘッダーの背景色 */
     color: black; /* ヘッダーのテキスト色 */
 }
 
 .table-custom td {
+    font-family: 'Caveat', 'Kaisei Tokumin', cursive;
     padding: 3px; /* セルのパディング */
     background-color: #ccedfa; /* ヘッダーの背景色 */
+    color: black; /* ヘッダーのテキスト色 */
+}
+
+/*for make_threads*/
+.make_threads_table-custom {
+    border-collapse: collapse;
+    border: 1px solid rgb(249, 247, 179); /* 枠線のスタイル */
+    width: 45%;                /*テーブル全体の幅指定 画面の割合%*/
+}
+
+.make_threads_table-custom th {
+    font-family: 'Caveat', 'Kaisei Tokumin', cursive;
+    background-color: rgb(249, 247, 179); /* ヘッダーの背景色 */
+    color: black; /* ヘッダーのテキスト色 */
+}
+
+.make_threads_table-custom td {
+    font-family: 'Caveat', 'Kaisei Tokumin', cursive;
+    padding: 3px; /* セルのパディング */
+    background-color: rgb(249, 247, 179); /* ヘッダーの背景色 */
     color: black; /* ヘッダーのテキスト色 */
 }
 
