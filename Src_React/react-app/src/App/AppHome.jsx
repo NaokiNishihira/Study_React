@@ -4,6 +4,7 @@ import './UseCss.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Table from './Table';
+import Table_Make_Threads from './Table_Make_Threads';
 
 export default function AppHome() {
     const [text, setText] = useState('');       //テキストボックスの中身を格納する変数
@@ -14,7 +15,7 @@ export default function AppHome() {
     };
 
     return (
-        <div>
+        <div className='background_img'>
             <h1 className="title">Welcome</h1>
             <h2 className="title">優しいSNS</h2>
             <br />
@@ -45,6 +46,7 @@ export default function AppHome() {
                 <h3 className="title title-special">{GenresName[1]}</h3>
             </div>
             <Table />
+            <Table_Make_Threads />
         </div>
     );
 }
